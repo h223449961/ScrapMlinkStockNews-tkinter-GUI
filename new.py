@@ -8,7 +8,7 @@ from tkinter import StringVar
 from ttkthemes import ThemedStyle
 
 root = tk.Tk()
-root.title('運用 python beautiful soup 查詢個股新聞，並實做 gui tkinter 視窗界面')
+root.title('運用 python beautiful soup 查詢個股新聞，並實做 gui tkinter 視窗界面 continue')
 style = ThemedStyle(root)
 style.set_theme("breeze")
 
