@@ -8,7 +8,6 @@ from tkinter import StringVar
 from ttkthemes import ThemedStyle
 
 root = tk.Tk()
-root.title('運用 python beautiful soup 查詢個股新聞，並實做 gui tkinter 視窗界面 continue')
 style = ThemedStyle(root)
 style.set_theme("breeze")
 
@@ -34,8 +33,8 @@ def switchon01():
    s01 = pd.Series([i.find('h3').text], index=['新聞標題'])
    df01 = df01.append(s01, ignore_index=True)
    df01.index = df01.index+1
-   print(s01.to_string())
    toast01_label.configure(text = df01)
+  print(df01.to_string())
  except:
   print('fault')
 
